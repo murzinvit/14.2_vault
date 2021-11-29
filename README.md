@@ -58,3 +58,7 @@ client.secrets.kv.v2.read_secret_version(
 * Создать секрет, в котором будет указан токен;
 * Подключить секрет к модулю;
 * Запустить модуль и проверить доступность сервиса Vault.
+
+
+### Рабочие заметки: </br>
+https://gitlab.com/k11s-os/k8s-lessons/-/tree/main/Vault <br>
