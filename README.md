@@ -5,21 +5,14 @@
 ```kubectl apply -f 14.2/vault-pod.yml```
 
 Получить значение внутреннего IP пода </br>
-```
-kubectl get pod 14.2-netology-vault -o json | jq -c '.status.podIPs'
-```
+```kubectl get pod 14.2-netology-vault -o json | jq -c '.status.podIPs'```
 
 Примечание: jq - утилита для работы с JSON в командной строке </br>
 Запустить второй модуль для использования в качестве клиента </br>
-```
-kubectl run -i --tty fedora --image=fedora --restart=Never -- sh
-```
+```kubectl run -i --tty fedora --image=fedora --restart=Never -- sh```</br>
 
 Установить дополнительные пакеты </br>
-```
-dnf -y install pip
-pip install hvac
-```
+```dnf -y install pip & pip install hvac```</br>
 
 Запустить интепретатор Python и выполнить следующий код, предварительно поменяв IP и токен </br>
 ```
