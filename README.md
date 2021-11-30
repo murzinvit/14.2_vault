@@ -2,9 +2,7 @@
 
 ### Задача 1: Работа с модулем Vault </br>
 Запустить модуль Vault конфигураций через утилиту kubectl в установленном minikube </br>
-```
-kubectl apply -f 14.2/vault-pod.yml
-```
+```kubectl apply -f 14.2/vault-pod.yml```
 
 Получить значение внутреннего IP пода </br>
 ```
