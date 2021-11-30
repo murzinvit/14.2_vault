@@ -57,4 +57,5 @@ https://gitlab.com/k11s-os/k8s-lessons/-/tree/main/Vault <br>
 https://pythonru.com/biblioteki/ustanovka-i-podklyuchenie-sqlalchemy-k-baze-dannyh <br>
 https://khashtamov.com/ru/postgresql-python-psycopg2/ <br>
 https://khashtamov.com/ru/pyenv-python/ <br>
-
+Установка vault: </br>
+https://www.dmosk.ru/instruktions.php?object=vault-hashicorp </br>
