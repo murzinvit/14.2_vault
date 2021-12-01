@@ -54,3 +54,4 @@ https://khashtamov.com/ru/postgresql-python-psycopg2/ <br>
 https://khashtamov.com/ru/pyenv-python/ <br>
 Установка vault: </br>
 https://www.dmosk.ru/instruktions.php?object=vault-hashicorp </br>
+https://linux-notes.org/ustanovka-vault-v-unix-linux/ </br>
