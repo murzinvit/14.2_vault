@@ -55,3 +55,4 @@ https://khashtamov.com/ru/pyenv-python/ <br>
 Установка vault: </br>
 https://www.dmosk.ru/instruktions.php?object=vault-hashicorp </br>
 https://linux-notes.org/ustanovka-vault-v-unix-linux/ </br>
+https://learn.hashicorp.com/tutorials/vault/kubernetes-raft-deployment-guide?in=vault/kubernetes </br>
