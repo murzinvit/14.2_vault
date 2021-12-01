@@ -1,0 +1,49 @@
+helm install vault hashicorp/vault --namespace vault
+
+kubectl config set-context default 
+
+kubectl get pods --selector='app.kubernetes.io/name=vault' --namespace='vault'
+
+kubectl exec --namespace='vault' --stdin=true --tty=true vault-0 -- vault operator init
+
+kubectl --namespace=vault describe pods vault-0
+
+kubectl describe pvc
+kubectl describe pv
+kubectl describe sc
+
+netstat -atnv | grep 8507
+
+kubectl apply -f - <<EOF
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: fileshare
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    server: 10.10.1.226
+    path: /var/nfs
+EOF
+
+---------------------------------------
+data-vault-0
+---------------------------------------
+kubectl apply -f - <<EOF
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: data-vault-0
+  namespace: vault
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi
+EOF
+-----------------------------------------
