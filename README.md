@@ -57,3 +57,4 @@ https://www.dmosk.ru/instruktions.php?object=vault-hashicorp </br>
 https://linux-notes.org/ustanovka-vault-v-unix-linux/ </br>
 https://learn.hashicorp.com/tutorials/vault/kubernetes-raft-deployment-guide?in=vault/kubernetes </br>
 https://github.com/hashicorp/vault-helm/issues/139 </br>
+https://adminunix.ru/podnimaem-nfs-na-debian/ </br>
