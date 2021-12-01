@@ -64,7 +64,7 @@ vault запечатан: `vault status`</br>
 vault write database/config/news \
  plugin_name=mysql-database-plugin \
  connection_url="{{username}}:{{password}}@tcp(10.10.1.111:31812)/" \
- allowed_roles="mysql-role" \
+ allowed_roles="test-role" \
  username="root" \
  password="admin"
  ```
