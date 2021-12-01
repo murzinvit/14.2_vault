@@ -70,7 +70,7 @@ vault write database/config/news \
  ```
  Создать role в vault: </br>
  ```
- vault write database/roles/mysql-role \
+ vault write database/roles/test-role \
  db_name=news \
  creation_statements="CREATE USER '{{name}}'@'%' IDENTIFIED BY '{{password}}'; GRANT SELECT ON *.* TO '{{name}}'@'%';" \
  default_ttl="1h" \
