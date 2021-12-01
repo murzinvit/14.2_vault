@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: dev6-vault
+  namespace: vault
   labels:
     app: dev6-vault
 spec:
