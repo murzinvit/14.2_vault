@@ -59,7 +59,7 @@ vault запечатан: `vault status`</br>
 Залогиниться на сервер: `vault login` </br>
 ![vault_login](https://github.com/murzinvit/screen_1/blob/53677c88a2de116c999dd1dbbc0c5ea10748fb9d/Kuber_vault_login.jpg) </br>
 Далее разрешаем database secrets engine: `vault secrets enable database` </br>
-Настройка для подключения vault к базе данных: </br>
+Настройка для подключения vault к базе news, c учёткой и правами на создание новых пользователей: </br>
 ```
 vault write database/config/news \
  plugin_name=mysql-database-plugin \
